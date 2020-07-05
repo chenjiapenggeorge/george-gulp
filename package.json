@@ -1,9 +1,13 @@
 {
   "name": "george-gulp",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "lib/index.js",
   "license": "MIT",
-  "devDependencies": {
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "dependencies": {
     "gulp": "^4.0.2",
     "@babel/core": "^7.10.4",
     "@babel/preset-env": "^7.10.4",
@@ -20,10 +24,12 @@
     "gulp-uglify": "^3.0.2",
     "gulp-useref": "^4.0.1"
   },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "gulp clean",
     "build": "gulp build",
     "dev": "gulp develop"
-  }
+  },
+  "bin": "bin/george-gulp.js"
 }
